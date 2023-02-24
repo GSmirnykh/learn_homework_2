@@ -12,7 +12,7 @@
 import csv
 
 def main():
-    with open('export.csv', 'w', encoding='utf-8') as file:
+    with open('export.csv', 'w', encoding='utf-8', newline='') as file:
         fields = ['name', 'age', 'job']
         content = [{'name': 'Mikhail', 'age': '30', 'job': 'developer'},
                    {'name': 'Gennadiy', 'age': '31', 'job': 'engineer'},
